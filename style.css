@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Mansalva&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #450920;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+  color: #A53860;
+  text-decoration: none;
+  transition: all ease 1s;
+}
+
+a[href$=".pdf"]{
+  color: #A53860;
+}
+
+a:hover{
+  color: #fff;
+  text-decoration: underline;
+  transition: all ease 1s;
+}
+
+a:hover:after{
+  content: "🤨";
+}
+
+h1{
+  font-size: calc(3rem + 5vw);
+}
+
+#bloque{
+  margin: 5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 1rem;
+  box-shadow: 0 0 5px white;
+}
+/*este bloque se sobreescribe mas abajo lol*/
+
+.xmas{
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ajuste{
+  font-size: 120%;
+}
+
+canvas {
+  display: block;
+}
+
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*forma anticuada de centrar las cosas en la pantalla, las mueve*/
+    width: 80%;
+    padding: 1%;
+    /*padding es margen interior, width seria de 82*/
+    margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
